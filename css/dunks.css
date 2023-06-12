@@ -1,0 +1,124 @@
+/*RESETEO*/
+*{
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0%;
+    scroll-behavior: smooth;
+    user-select: none;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*HEADER*/
+.navbar-light {
+    background-color: #0c2340;
+}
+.nav-link:hover {
+    background-color: #799bbf;
+    transition: .5s;
+}
+
+.img-logo {
+    width: 100px;
+  }
+
+.img-logo:hover {
+    transform: rotate(360deg);
+    transition: 2s;
+  }
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*TITULO*/
+.title {
+    background-color: #799bbf;
+    margin-top: 16px;
+}
+
+.title h1{
+    font-size: 60px;
+    color: #0c2340;
+    text-align: center; 
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*MAIN*/
+.middle-container {
+    background-color: #0c2340;
+}
+.slide {
+    height: 80%;
+}
+.carousel-inner {
+    display: flex;
+    text-align: center; 
+    margin-top: 15px;
+}
+.w-100{
+    border-radius: 10px;
+    margin-top: 80px;
+    height: 80%;
+}
+/*SEGUNDO TITULO*/
+.second-title {
+    background-color: #799bbf; 
+    margin-bottom: 30px;
+}
+
+.second-title h1{
+    font-size: 60px; 
+    color: #0c2340; 
+    text-align: center; 
+}
+/*TEXTO*/
+.row{
+    margin-bottom: 20px;
+}
+
+#texto {
+    color: white;
+    text-align: center;
+}
+
+#texto p {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+/*FOOTER*/
+.footer-container .grupo-1 {
+    background-color: #0c2340;
+  }
+  
+  .footer-container .grupo-1 div ul li a {
+    display: flex;
+    text-decoration: none;
+    width: 20px;
+    height: 20px;
+    line-height: 25px;
+    margin: 5px;
+  }
+  
+  .footer-container .grupo-1 div {
+    margin-right: 200px;
+  }
+  
+  .footer-container .grupo-1 div {
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .footer-container .grupo-1 div h2 {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .img-logo-footer {
+    width: 120px;
+  }

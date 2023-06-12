@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0%;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=reseteo.css.map */
