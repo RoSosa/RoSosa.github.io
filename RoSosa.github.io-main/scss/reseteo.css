@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+} /*# sourceMappingURL=reseteo.css.map */
