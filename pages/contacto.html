@@ -4,115 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Disfruta de contenido informativo sobre el jugador de la NBA Ja Morant">
-    <meta name="keywords" content="Ja, Morant, Ja morant, NBA, basketball, baloncesto">
-    <!--Link conexion css-->
-    <link rel="stylesheet" href="/css/contacto.css">
+    <meta name="description" co   ntent="Disfruta de contenido informativo sobre el jugador de la NBA Ja Morant">
+    <meta name="keywords" content="Ja, Morant, Ja morant, NBA, basketball, baloncesto, Dunks, NBA draft, el pistolero">
     <!--Link boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Link conexion css-->
+    <link rel="stylesheet" href="../css/contacto.css">
     <!--favicon-->
     <link rel="shortcut icon" href="/image/logo-negro-comprimido.png">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <title>Ja Morant</title>
 </head>
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="img-logo" src="../image/logo-blanco-compimido.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html" style="color: white; text-decoration:none; font-style: oblique; font-size: 170%;">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./biografia.html" style="color: white; text-decoration:none; font-style: oblique; font-size: 170%;">Biografia</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white; text-decoration:none; font-style: oblique; font-size: 170%;">
-                  More
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./dunks.html" >Dunks</a></li>
-                  <li><a class="dropdown-item" href="./stats.html">stats</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html" tabindex="-1" aria-disabled="true" style="color: white; text-decoration:none; font-style: oblique; font-size: 170%;">Contacto</a>
-              </li>
-            </ul>
-          </div>
+  <header class="header">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="../image/logo-blanco-compimido.png" alt="Logo de la marca">
+      </a>
+    </div>
+    <nav>
+       <ul class="nav-links">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/biografia.html">Biografia</a></li>
+        <li><a href="dunks.html">Dunk</a></li>
+        <li><a href="stats.html">Stats</a></li>
+       </ul>            
+    </nav>
+    <a class="btn" href="contacto.html"><button>Contacto</button></a>
+
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+    <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+             <li><a href="/index.html">Inicio</a></li>
+             <li><a href="/pages/biografia.html">Biografia</a></li>
+             <li><a href="dunks.html">Dunk</a></li>
+             <li><a href="stats.html">Stats</a></li>
+            <a href="contacto.html">Contacto</a>
         </div>
-      </nav>
+    </div>
 </header> 
-    <div class="title">
-        <h1>JA MORANT</h1>
-      </div>
 
-      <main style="background-color: #0c2340;"> <!--inicio del main-->
-        <div class="contact-container">
-          <h2 class="contact-title">Contacto</h2>
-          <form class="contact-form">
-            <div>
-              <label class="contact-label" for="full-name">Full Name:</label>
-              <input type="text" id="full-name" class="contact-input" placeholder="Enter your full name" >
+      <div class="content">
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contacto</h3>
+                <form action="">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Correo Electronico</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Número</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Mensaje</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
+                </form>
             </div>
-            <div>
-              <label class="contact-label" for="email">Email Address:</label>
-              <input type="email" id="email" class="contact-input" placeholder="Enter your email address">
+            <div class="contact-info">
+                <h4>Mas Informacion</h4>
+                <ul> 
+                    <li><i class="fas fa-phone"></i> 095 277 855</li>
+                    <li><i class="fas fa-envelope-open-text"></i> jamorantoficial@gmail.com</li>
+                </ul>
+                <p>Quieres ayudarnos con mas inforamación sobre este jugador?</p>
+                <p>Rodrigososa.com</p>
             </div>
-            <div>
-              <label class="contact-label" for="mobile-number">Mobile Number:</label>
-              <input type="text" id="mobile-number" class="contact-input" placeholder="Enter your mobile number">
-            </div>
-            <div>
-              <label class="contact-label" for="email-subject">Email Subject:</label>
-              <input type="text" id="email-subject" class="contact-input" placeholder="Enter the email subject">
-            </div>
-            <div>
-              <label class="contact-label" for="message">Your Message:</label>
-              <textarea id="message" class="contact-textarea" placeholder="Enter your message"></textarea>
-            </div>
-            <input type="submit" value="Send" class="contact-submit">
-          </form>
         </div>
 
-  </main>  
-    <footer class="footer-container"> <!--Inicio de footer-->
-        <div class="grupo-1 row" style="background-color: #0c2340;">
-            <div class="logo-ja col-sm-3 col-md-1 col-lg-1"> <!--Logo de Ja morant-->
-                <img src="../image/logo-blanco-compimido.png" alt="logo" width="120px">
-            </div>   
-            <div class="redes-1 col-sm-3 col-md-1 col-lg-1"> <!--Mis redes-->                 
-                <ul>
-                    <h2>Mis Redes:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/rososaurda/" style="display: flex;text-decoration: none; width: 20px; height: 20px; line-height: 25px; margin: 5px;"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/rorososaurda15"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/channel/UCUtTxE1Z2o5PxH2itZfmBWw"><p>youtube</p></a></li>               
-                </ul>
-            </div>
-            <div class="redes-2 col-sm-3 col-md-1 col-lg-1"> <!--Redes de Ja Morant-->               
-                <ul>
-                    <h2>Ja Morant:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/jamorant/"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/JaMorant"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/@Ja_Morant"><p>youtube</p></a></li>                               
-                </ul>
-            </div>
-            <div class="redes-3 col-sm-3 col-md-1 col-lg-1"> <!--Redes de Grizzlies-->              
-                <ul>
-                    <h2>Grizzlies:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/memgrizz/"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/memgrizz"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/user/memphisgrizzlies"><p>youtube</p></a></li>                               
-                </ul>
+    </div>  
+  <footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="/image/logo-blanco-compimido.png" alt="Logo de ja morant">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Somos una pagina web desarrollada unicamente para brindar información a los lectores sobre Ja Morant.</p>
+            <p>Unicamente con fin informativo, sin fin de lucro.</p>
+        </div>
+        <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/rorososaurda/" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/rososaurda/" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/rorososaurda15" class="fa fa-twitter"></a>
+                <a href="https://www.youtube.com/channel/UCUtTxE1Z2o5PxH2itZfmBWw" class="fa fa-youtube"></a>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2023 <b>Rodrigo Sosa</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
 </body>
 </html>

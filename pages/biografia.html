@@ -1,121 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Disfruta de contenido informativo sobre el jugador de la NBA Ja Morant">
-    <meta name="keywords" content="Ja, Morant, Ja morant, NBA, basketball, baloncesto">
+    <meta name="keywords" content="Ja, Morant, Ja morant, NBA, basketball, baloncesto, Dunks, NBA draft, el pistolero">
     <!--Link conexion css-->
     <link rel="stylesheet" href="/css/biografia.css">
-    <!--Link boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--favicon-->
     <link rel="shortcut icon" href="/image/logo-negro-comprimido.png">
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Ja Morant</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">
-                <img class="img-logo" src="../image/logo-blanco-compimido.png" alt="logo">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html" style="color: white;" >Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/biografia.html" style="color: white;" >Biografia</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;" >
-                      More
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="../pages/dunks.html"  style="font-size: 16px;">Dunks</a></li>
-                      <li><a class="dropdown-item" href="../pages/stats.html" style="font-size: 16px;">stats</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html" tabindex="-1" aria-disabled="true"  style="color: white;"  >Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </header> 
-    <div class="title">
-        <h1>JA MORANT</h1>
-      </div>
-    
-    <main> <!--inicio del main-->
-        <section class="middle-container"> <!--cuadro realizado para el diseño-->
-            <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4">          
-                      <div>  <h2 class="segundo-titulo">La vida de Ja Morant</h2> </div> <!--segundo titulo-->
+  <header class="header">
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/image/logo-blanco-compimido.png" alt="Logo de la marca">
+      </a>
+    </div>
+    <nav>
+       <ul class="nav-links">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/pages/biografia.html">Biografia</a></li>
+        <li><a href="/pages/dunks.html">Dunk</a></li>
+        <li><a href="/pages/stats.html">Stats</a></li>
+       </ul>            
+    </nav>
+    <a class="btn" href="/pages/contacto.html"><button>Contacto</button></a>
 
-                      <article>
-                          <h2>Temetrius Jamel Morant</h2>
-                          <p class="parrafo-1">Ja nació el 10 de agosto de 1999 en Carolina del Sur. Su nombre completo es Temetrius Jamel Morant. Morant jugó en la universidad Murray State University durante dos temporadas (2017-19). Hizo un impacto en la escuela y estableció varios récords y ganó muchos premios.</p>
-                      </article>
-                          <h2>Rookie of the Year</h2>
-                          <p class="parrafo-2">Morant fue elegido con la selección número 2 en el Draft de 2019. Los Memphis Grizzlies seleccionaron a Morant y el equipo ha ido en ascenso desde entonces. Morant fue nombrado Novato del Año de la NBA en 2020.</p>
-                      <article>
-                          <h2>Athleticism</h2>
-                          <p class="parrafo-3">Con 6'3, Ja es un base que puede hacer cualquier cosa en la cancha de baloncesto. Sus manejos y visión de la cancha están a un nivel de élite para un escolta. Lo que realmente lo hace especial es su atletismo. Su velocidad es insuperable en la cancha, puede llegar del punto A al B en un instante. Lo que hace que Ja sea un habitual en las redes sociales y los mixtapes de YouTube es su explosividad cuando ataca el aro. Sus volcadas son algunas de las mejores y más feroces de todos los tiempos. Su elevación y tiempo de espera son aparentemente ilimitados.</p>
-                      </article>
-                    </div>
-                <div class="col-sm-12 col-md-6 col-lg-8">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img style="border-radius: 15px;" src="../image/ja morant 2compimido.jpg" class="d-block w-100" alt="ja-2">
-                      </div>
-                    </div>
-                    </div>
-                </div>  
-            </div>
-        </section>
+    <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
 
-    </main>
-    
-    <footer class="footer-container"> <!--Inicio de footer-->
-        <div class="grupo-1 row" style="background-color: #0c2340;">
-            <div class="logo-ja col-sm-3 col-md-1 col-lg-1"> <!--Logo de Ja morant-->
-                <img src="../image/logo-blanco-compimido.png" alt="logo" width="120px">
-            </div>   
-            <div class="redes-1 col-sm-3 col-md-1 col-lg-1"> <!--Mis redes-->                 
-                <ul>
-                    <h2>Mis Redes:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/rososaurda/" style="display: flex;text-decoration: none; width: 20px; height: 20px; line-height: 25px; margin: 5px;"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/rorososaurda15"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/channel/UCUtTxE1Z2o5PxH2itZfmBWw"><p>youtube</p></a></li>               
-                </ul>
-            </div>
-            <div class="redes-2 col-sm-3 col-md-1 col-lg-1"> <!--Redes de Ja Morant-->               
-                <ul>
-                    <h2>Ja Morant:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/jamorant/"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/JaMorant"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/@Ja_Morant"><p>youtube</p></a></li>                               
-                </ul>
-            </div>
-            <div class="redes-3 col-sm-3 col-md-1 col-lg-1"> <!--Redes de Grizzlies-->              
-                <ul>
-                    <h2>Grizzlies:</h2>
-                    <li><a class="a-1" href="https://www.instagram.com/memgrizz/"><p>instagram</p></a></li>
-                    <li><a class="a-1" href="https://twitter.com/memgrizz"><p>twitter</p></a></li>
-                    <li><a class="a-1" href="https://www.youtube.com/user/memphisgrizzlies"><p>youtube</p></a></li>                               
-                </ul>
-            </div>
+    <div id="mobile-menu" class="overlay">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="overlay-content">
+             <li><a href="/index.html">Inicio</a></li>
+             <li><a href="/pages/biografia.html">Biografia</a></li>
+             <li><a href="/pages/dunks.html">Dunk</a></li>
+             <li><a href="/pages/stats.html">Stats</a></li>
+            <a href="/pages/contacto.html">Contacto</a>
         </div>
-    </footer>
+    </div>
+</header> 
+
+    <main>
+        <div class="content second-header">
+            <h2 class="title">Ja Morant</h2>
+        </div>
+    
+        <section class="content sau">
+    
+            <h2 class="title">Biografía</h2>
+            <p>Ja Morant es un talentoso jugador de baloncesto nacido el 10 de agosto de 1999 en Dalzell, Carolina del Sur. Es conocido por su increíble habilidad, velocidad y destreza en la cancha. Morant se ha convertido rápidamente en una de las estrellas emergentes más prometedoras de la NBA.
+                Desde muy joven, Morant mostró un amor y talento innato por el baloncesto. Jugó en la escuela secundaria Crestwood en Sumter, Carolina del Sur, donde rápidamente se destacó como uno de los mejores jugadores de su generación. Durante su último año, promedió asombrosas estadísticas de 27 puntos, 8.8 rebotes y 8.2 asistencias por juego, consolidando su reputación como uno de los mejores bases de su clase.
+                A pesar de no haber sido reclutado por las universidades más prestigiosas, Morant eligió asistir a la Universidad de Murray State en Kentucky. Durante su tiempo en la universidad, dejó una marca indeleble en la historia del programa. En su segunda temporada, lideró a los Racers a una destacada actuación en el Torneo de la NCAA de 2019. Morant fue elogiado por su estilo de juego emocionante y su capacidad para llevar a su equipo al éxito.
+            </p>
+        </section>
+    
+        <section class="content información">
+    
+            <h2 class="title">Información</h2>
+            <p>Tras su temporada destacada en la NCAA, Morant decidió declararse elegible para el Draft de la NBA de 2019. Fue seleccionado en la segunda posición por los Memphis Grizzlies, convirtiéndose en uno de los jugadores más emocionantes y esperados de la liga.
+                En su temporada de novato, Morant superó todas las expectativas. Promedió 17.8 puntos, 7.3 asistencias y 3.9 rebotes por partido, lo que le valió el premio al Novato del Año de la NBA en 2020. Su estilo de juego espectacular y su capacidad para realizar jugadas asombrosas lo convirtieron rápidamente en uno de los favoritos de los fanáticos.
+                En las temporadas siguientes, Morant continuó mejorando y estableciéndose como uno de los mejores bases de la NBA. Su capacidad para penetrar hacia el aro, su visión de juego y su habilidad para finalizar en la pintura lo convierten en una amenaza constante para los equipos rivales. Además, su habilidad para hacer jugadas destacadas ha contribuido a su creciente popularidad y ha elevado el perfil de los Memphis Grizzlies.
+                Fuera de la cancha, Morant ha demostrado ser una persona humilde y trabajadora. A través de su determinación y ética de trabajo, ha inspirado a muchos jóvenes a perseguir sus sueños y ha demostrado que no es necesario venir de una universidad de renombre para triunfar en el baloncesto profesional.
+                Con solo unos pocos años en la liga, Ja Morant ha dejado una huella significativa en el baloncesto profesional. Su futuro parece brillante y se espera que continúe deslumbrando a los fanáticos con su increíble talento y pasión por el juego.
+            </p>
+    
+        </section>
+    
+        <section class="content contacto">
+    
+            <article class="contain">
+                <h2 class="title">Contacto</h2>
+                <p>Si te interesa la vida de este jugador 
+                    y tienes mas datos que brindar para ayudar 
+                    con su información. No 
+                    dudes en contactarnos, 
+                    y compartirnos todo lo que desees.
+                </p>
+                <a href="/pages/contacto.html" class="second-btn">Contactanos</a>
+            </article>
+
+        </section>
+    </main>  
+
+    <!--Footer-->
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+          <div class="box">
+              <figure>
+                  <a href="/index.html">
+                      <img src="/image/logo-blanco-compimido.png" alt="Logo de ja morant">
+                  </a>
+              </figure>
+          </div>
+          <div class="box">
+              <h2>SOBRE NOSOTROS</h2>
+              <p>Somos una pagina web desarrollada unicamente para brindar información a los lectores sobre Ja Morant.</p>
+              <p>Unicamente con fin informativo, sin fin de lucro.</p>
+          </div>
+          <div class="box">
+              <h2>SIGUENOS</h2>
+              <div class="red-social">
+                  <a href="https://www.facebook.com/rorososaurda/" class="fa fa-facebook"></a>
+                  <a href="https://www.instagram.com/rososaurda/" class="fa fa-instagram"></a>
+                  <a href="https://twitter.com/rorososaurda15" class="fa fa-twitter"></a>
+                  <a href="https://www.youtube.com/channel/UCUtTxE1Z2o5PxH2itZfmBWw" class="fa fa-youtube"></a>
+              </div>
+          </div>
+      </div>
+      <div class="grupo-2">
+          <small>&copy; 2023 <b>Rodrigo Sosa</b> - Todos los Derechos Reservados.</small>
+      </div>
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/nav.js"></script>
 </body>
 
 </html>

@@ -1,86 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 /*FORMATEO DE ESTILO*/
 //Import//
 //Import resteo//
 @import url(reseteo.css);
+//Import footer//
 @import url(footer.css);
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////*/
-/*HEADER*/
-.navbar-light {
-  background-color: #0c2340;
-}
-.nav-link:hover {
-  background-color: #799bbf;
-  transition: .5s;
-}
-
-.img-logo {
-  width: 100px;
-}
-
-.img-logo:hover {
-  transform: rotate(360deg);
-  transition: 2s;
-}
-/*//////////////////////////////////////////////////////////////////////////////////////////////*/
-/*TITULO*/
-.title {
-  background-color: #799bbf;
-  margin-top: 16px;
-}
-
-.title h1{
-  font-size: 60px;
-  color: #0c2340;
-  text-align: center; 
-}
-
-/*//////////////////////////////////////////////////////////////////////////////////////////////*/
-/*MAIN*/
-.carousel {
-    margin-top: 20px;
-}
-
-.middle-container .row {
-    background-color: #0c2340; margin-top: 20px; margin-bottom: 20px;
-}
-
-.middle-container .row div {
-    color: white;
-}
-
-.carousel .carousel-inner .carousel-item img {
-    border-radius: 15px;
-}
-
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-
-  @media (max-width: 600px) {
-    
-  }
-
-  th, td {
-    font-size: 12px;
-    display: block;
-  }
-
-  td:before {
-    content: attr(data-label);
-    float: left;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  td:last-child {
-    border-bottom: 0;
-  }
+//Import main//
+@import url(main.css);
+//Import header//
+@import url(header.css);
